@@ -9,6 +9,14 @@ root:
 sudo -s
 桌面和novnc
 docker run -p 8080:80 dorowu/ubuntu-desktop-lxde-vnc
+
+账户名密码：
+root
+password
+
+
+可以上谷歌, youtube但是没有声音
+
 ```
 
 
