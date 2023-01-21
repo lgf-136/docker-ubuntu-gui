@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  ubuntu-desktop-lxde-vnc:
+    container_name: ubvnc
+    ports:
+      - "6080:80"
+      - "5901:5900"
+      - "8888-8898:8888-8898"
+    volumes:
+      - "./:/root"
+      - "/dev/shm:/dev/shm"
+    environment:
+      - HTTP_PASSWORD=password
+      - VNC_PASSWORD=password
+      - RESOLUTION=1600x900
+    image: "dorowu/ubuntu-desktop-lxde-vnc:latest"
